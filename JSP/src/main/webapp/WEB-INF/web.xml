@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+<servlet> 
+  <servlet-name>myServlet</servlet-name> 
+  <servlet-class>myservlet.control.lybservlet</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>myServlet</servlet-name>
+  <url-pattern>/lyb</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>lybservlet</servlet-name> 
+  <servlet-class>myservlet.control.showlyb</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>lybservlet</servlet-name>
+  <url-pattern>/showMessage</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>registered</servlet-name> 
+  <servlet-class>myservlet.control.registeredservlet</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>registered</servlet-name>
+  <url-pattern>/register</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>loginservlet</servlet-name> 
+  <servlet-class>myservlet.control.loginservlet</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>loginservlet</servlet-name>
+  <url-pattern>/login</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>foundpassword</servlet-name> 
+  <servlet-class>myservlet.control.foundpassword</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>foundpassword</servlet-name>
+  <url-pattern>/found</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>teacherperson</servlet-name> 
+  <servlet-class>myservlet.control.teacherperson</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>teacherperson</servlet-name>
+  <url-pattern>/tperson</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>studentperson</servlet-name> 
+  <servlet-class>myservlet.control.studentperson</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>studentperson</servlet-name>
+  <url-pattern>/sperson</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>studentques</servlet-name> 
+  <servlet-class>myservlet.control.studentques</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>studentques</servlet-name>
+  <url-pattern>/sques</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>showques</servlet-name> 
+  <servlet-class>myservlet.control.showquesAnswer</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>showques</servlet-name>
+  <url-pattern>/showques</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>teacherquestion</servlet-name> 
+  <servlet-class>myservlet.control.teacherques</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>teacherquestion</servlet-name>
+  <url-pattern>/tques</url-pattern> 
+</servlet-mapping>
+
+
+<servlet> 
+  <servlet-name>teacherdeletelyb</servlet-name> 
+  <servlet-class>myservlet.control.deletelyb</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>teacherdeletelyb</servlet-name>
+  <url-pattern>/tdeletelyb</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>teacherpublish</servlet-name> 
+  <servlet-class>myservlet.control.teacherpublish</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>teacherpublish</servlet-name>
+  <url-pattern>/publish</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>studentlookanswer</servlet-name> 
+  <servlet-class>myservlet.control.lookAnswer</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>studentlookanswer</servlet-name>
+  <url-pattern>/lookAnswer</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>answerstudent</servlet-name> 
+  <servlet-class>myservlet.control.answerstudent</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>answerstudent</servlet-name>
+  <url-pattern>/Answer</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>teacheranswerques</servlet-name> 
+  <servlet-class>myservlet.control.teacherAnswer</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>teacheranswerques</servlet-name>
+  <url-pattern>/teacherlookanswer</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>tshowlyb</servlet-name> 
+  <servlet-class>myservlet.control.tshowlyb</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>tshowlyb</servlet-name>
+  <url-pattern>/tshowlyb</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>adminregistered</servlet-name> 
+  <servlet-class>myservlet.control.adminRegister</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>adminregistered</servlet-name>
+  <url-pattern>/adminregistered</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>deleteteacher</servlet-name> 
+  <servlet-class>myservlet.control.deleteTeacher</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>deleteteacher</servlet-name>
+  <url-pattern>/deleteteacher</url-pattern> 
+</servlet-mapping>
+
+<servlet> 
+  <servlet-name>deleteStudent</servlet-name> 
+  <servlet-class>myservlet.control.deleteStudent</servlet-class> 
+</servlet>
+<servlet-mapping> 
+  <servlet-name>deleteStudent</servlet-name>
+  <url-pattern>/deleteStudent</url-pattern> 
+</servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,139 @@
+
+			body {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background: #060c21;
+				font-family: 'Poppins', sans-serif;
+			}
+			.box {
+                top:70px;
+				position: relative;
+				width: 300px;
+				height: 430px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #060c21;
+			}
+			/* 用box的伪元素添加一个面积比box略大的矩形,并通过改变层叠次序,置于box的下层,达到给box设置边框的效果 */
+			.box::before {
+				content: '';
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				right: -2px;
+				bottom: -2px;
+				background: #fff;
+				z-index: -1;/*放在倒数第二层*/
+                                                                /*设置2px的边框*/
+ 			}
+			/* 于上面类似,做一个面积比box略大的矩形,并通过改变层叠次序,置于box的下层,达到给box设置边框的效果 */
+			.box::after {
+				content: '';
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				right: -2px;
+				bottom: -2px;
+				background: #fff;
+				z-index: -2;/*放在最底层*/
+				/* 滤镜属性  给图像设置高斯模糊。"radius"一值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，所以值越大越模糊；如果没有设定值，则默认是0；这个参数                                                                可设置css长度值，但不接受百分比值。 */
+				filter: blur(40px);/*设置荧光*/
+             }
+            .box::before,.box::after {
+				/* linear-gradient() 函数用于创建一个线性渐变的 "图像"。 参数1:用角度值指定渐变的方向（或角度）  12点钟方向为0deg*/
+				background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+                                                                
+			}
+            .login-box {
+				position: absolute;
+				top: 0;
+			                left: 15%;
+				width: 70%;
+				height: 55.5vh; /* vh 视口高度 viewport height 百分比单位*/
+                                                                background-color:rgb(6,12,33);
+				/*background-image: linear-gradient(45deg,rgb(5,63,85),rgb(135,251,0);
+		                                设置颜色渐变 方向(0deg垂直向上) 起点颜色 终点颜色*/
+				transition: 0.4s; /*过度效果  property duration timing-function delay 默认属性:all 0 ease 0*/
+			}
+			.login-form {
+				position: absolute;
+				top: 192px;
+				left: 105.5px;
+				transform: translate(-50%, -50%); /*定义 2D 转换8 */
+				color: white;
+				text-align: center;
+			}
+			.login-form h1 {
+				font-weight: 400;
+				margin-top: 0;
+			}
+			.txtb {
+				display: block;
+				box-sizing: content-box;
+				width: 200px;
+				background: #ffffff28;
+				border: 1px solid white;
+				padding: 10px 0px;
+				color: white;
+				outline: none;
+				margin: 10px 0;
+				border-radius: 6px;
+				text-align: center;
+			}
+			.login-btn {
+				width: 200px;
+				background: #2c3e50;
+				border: 0;
+				color: white;
+				padding: 10px;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+           a{
+             display:block;
+             padding-top:10px;
+             text-align: center;
+             text-decoration:none;				
+             color:white;
+            }
+            #first{
+           			position:absolute;
+					top:150px;
+					font:normal normal 900 30px "黑体";
+					background-image: -webkit-linear-gradient(right, rgb(53,213,157),rgb(102,163,210));
+             		-webkit-background-clip: text; 
+					-webkit-text-fill-color: transparent;
+			}
+			.bottom{
+					position:absolute;
+					top:750px;
+					margin:0px;
+					padding:0px;
+					padding-top:20px;
+					background-color:rgb(6,12,33);
+					width:100%;
+   					height:84px;
+					text-align:center;
+					}
+			.bottom span{
+					margin-left:3px;
+					margin-right:3px;
+					color:white;
+					font-size:14px;
+					}
+			.bottom a{
+					display:inline-block;
+					text-decoration:none;
+					padding-bottom:2px;
+					border-bottom:2px solid white;
+					}
+			.bottom p{
+					color:white;
+					font-size:14px;
+					}
+             
